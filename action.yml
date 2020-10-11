@@ -1,0 +1,22 @@
+name: upstream-trello-card-creator
+description: Create one trello card for each new commit on a given upstream
+author: Nicolás Tinte
+branding:
+  icon: more-horizontal
+  color: gray-dark
+inputs:
+  TRELLO_API_KEY:
+    description: Trello API key.
+    required: true
+  TRELLO_OAUTH_TOKEN:
+    description: Trello OAUTH token.
+    required: true
+  TRELLO_LIST_ID:
+    description: ID of the list where cards should be created.
+    required: true
+  UPSTREAM:
+    description: Upstream url.
+    required: true
+runs:
+  using: node12
+  main: dist/index.js
