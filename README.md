@@ -30,7 +30,7 @@ name: Create trello card for new upstream commits
 
 on:
   schedule:
-    - cron: '*/5* * * *' # every 5 minutes
+    - cron: '*/5 * * * *' # every 5 minutes
 
 jobs:
   sync:

@@ -8,10 +8,9 @@ import assert_1 from 'assert';
 import http from 'http';
 import https from 'https';
 import tty from 'tty';
-import require$$0$2 from 'supports-color';
 import buffer from 'buffer';
 import crypto from 'crypto';
-import require$$0$3 from 'async_hooks';
+import require$$0$2 from 'async_hooks';
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -1592,9 +1591,67 @@ exports.exec = exec;
 
 });
 
-var name = "trello-node-api";
-var version = "0.0.9";
+var _from = "trello-node-api@^0.0.9";
+var _id = "trello-node-api@0.0.9";
+var _inBundle = false;
+var _integrity = "sha512-UVkn8rZV427i1tnn/flIkbmIzblEv868poTeOHhMrsblP3ogA6umgy2dh6+1QvjTvBQ1YiVpVUQQp/ZSBZlOMA==";
+var _location = "/trello-node-api";
+var _phantomChildren = {
+};
+var _requested = {
+	type: "range",
+	registry: true,
+	raw: "trello-node-api@^0.0.9",
+	name: "trello-node-api",
+	escapedName: "trello-node-api",
+	rawSpec: "^0.0.9",
+	saveSpec: null,
+	fetchSpec: "^0.0.9"
+};
+var _requiredBy = [
+	"/"
+];
+var _resolved = "https://registry.npmjs.org/trello-node-api/-/trello-node-api-0.0.9.tgz";
+var _shasum = "94780de053517439f804f004e596565bfd78d71a";
+var _spec = "trello-node-api@^0.0.9";
+var _where = "/Users/tintef/Documents/opensource/upstream-trello-card";
+var author = {
+	name: "Bhushankumar Lilapara",
+	email: "bhushankumar.lilapara@gmail.com"
+};
+var bugs = {
+	url: "https://github.com/bhushankumarl/trello-node-api/issues"
+};
+var bundleDependencies = false;
+var contributors = [
+	{
+		name: "Bhushankumar Lilapara",
+		url: "bhushankumar.lilapara@gmail.com"
+	}
+];
+var dependencies = {
+	bluebird: "^3.7.2",
+	debug: "^4.1.1",
+	"lodash.isplainobject": "^4.0.6",
+	qs: "~6.9.1",
+	"safe-buffer": "^5.2.0"
+};
+var deprecated = false;
 var description = "Trello Node API wrapper";
+var devDependencies = {
+	"@types/chai": "^4.2.8",
+	"@types/mocha": "^7.0.1",
+	"@types/node": "^13.7.0",
+	chai: "^4.2.0",
+	"chai-as-promised": "~7.1.1",
+	mocha: "^7.0.1",
+	"ts-node": "^8.6.2",
+	typescript: "^3.7.5"
+};
+var engines = {
+	node: ">=4"
+};
+var homepage = "https://github.com/bhushankumarl/trello-node-api";
 var keywords = [
 	"node-trello",
 	"node-trello-api",
@@ -1618,57 +1675,49 @@ var keywords = [
 	"trello-typescript",
 	"trello-es6"
 ];
-var homepage = "https://github.com/bhushankumarl/trello-node-api";
-var author = "Bhushankumar Lilapara<bhushankumar.lilapara@gmail.com>";
-var contributors = [
-	"Bhushankumar Lilapara (bhushankumar.lilapara@gmail.com)"
-];
+var license = "MIT";
+var main = "lib/trello-node-api";
+var name = "trello-node-api";
 var repository = {
 	type: "git",
-	url: "https://github.com/bhushankumarl/trello-node-api"
+	url: "git+https://github.com/bhushankumarl/trello-node-api.git"
 };
-var engines = {
-	node: ">=4"
-};
-var main = "lib/trello-node-api";
-var dependencies = {
-	bluebird: "^3.7.2",
-	debug: "^4.1.1",
-	"lodash.isplainobject": "^4.0.6",
-	qs: "~6.9.1",
-	"safe-buffer": "^5.2.0"
-};
-var devDependencies = {
-	"@types/chai": "^4.2.8",
-	"@types/mocha": "^7.0.1",
-	"@types/node": "^13.7.0",
-	chai: "^4.2.0",
-	"chai-as-promised": "~7.1.1",
-	mocha: "^7.0.1",
-	"ts-node": "^8.6.2",
-	typescript: "^3.7.5"
-};
-var license = "MIT";
 var scripts = {
 	lint: "tsc index.d.ts",
 	"test.mocha": "npm run lint; mocha -r ts-node/register test/**/*.spec.ts"
 };
+var version = "0.0.9";
 var require$$1 = {
-	name: name,
-	version: version,
-	description: description,
-	keywords: keywords,
-	homepage: homepage,
+	_from: _from,
+	_id: _id,
+	_inBundle: _inBundle,
+	_integrity: _integrity,
+	_location: _location,
+	_phantomChildren: _phantomChildren,
+	_requested: _requested,
+	_requiredBy: _requiredBy,
+	_resolved: _resolved,
+	_shasum: _shasum,
+	_spec: _spec,
+	_where: _where,
 	author: author,
-	contributors: contributors,
-	repository: repository,
+	bugs: bugs,
 	"bugs:": "https://github.com/bhushankumarl/trello-node-api/issues",
-	engines: engines,
-	main: main,
+	bundleDependencies: bundleDependencies,
+	contributors: contributors,
 	dependencies: dependencies,
+	deprecated: deprecated,
+	description: description,
 	devDependencies: devDependencies,
+	engines: engines,
+	homepage: homepage,
+	keywords: keywords,
 	license: license,
-	scripts: scripts
+	main: main,
+	name: name,
+	repository: repository,
+	scripts: scripts,
+	version: version
 };
 
 /**
@@ -2360,6 +2409,144 @@ formatters.j = function (v) {
 };
 });
 
+var hasFlag = (flag, argv = process.argv) => {
+	const prefix = flag.startsWith('-') ? '' : (flag.length === 1 ? '-' : '--');
+	const position = argv.indexOf(prefix + flag);
+	const terminatorPosition = argv.indexOf('--');
+	return position !== -1 && (terminatorPosition === -1 || position < terminatorPosition);
+};
+
+const {env} = process;
+
+let forceColor;
+if (hasFlag('no-color') ||
+	hasFlag('no-colors') ||
+	hasFlag('color=false') ||
+	hasFlag('color=never')) {
+	forceColor = 0;
+} else if (hasFlag('color') ||
+	hasFlag('colors') ||
+	hasFlag('color=true') ||
+	hasFlag('color=always')) {
+	forceColor = 1;
+}
+
+if ('FORCE_COLOR' in env) {
+	if (env.FORCE_COLOR === 'true') {
+		forceColor = 1;
+	} else if (env.FORCE_COLOR === 'false') {
+		forceColor = 0;
+	} else {
+		forceColor = env.FORCE_COLOR.length === 0 ? 1 : Math.min(parseInt(env.FORCE_COLOR, 10), 3);
+	}
+}
+
+function translateLevel(level) {
+	if (level === 0) {
+		return false;
+	}
+
+	return {
+		level,
+		hasBasic: true,
+		has256: level >= 2,
+		has16m: level >= 3
+	};
+}
+
+function supportsColor(haveStream, streamIsTTY) {
+	if (forceColor === 0) {
+		return 0;
+	}
+
+	if (hasFlag('color=16m') ||
+		hasFlag('color=full') ||
+		hasFlag('color=truecolor')) {
+		return 3;
+	}
+
+	if (hasFlag('color=256')) {
+		return 2;
+	}
+
+	if (haveStream && !streamIsTTY && forceColor === undefined) {
+		return 0;
+	}
+
+	const min = forceColor || 0;
+
+	if (env.TERM === 'dumb') {
+		return min;
+	}
+
+	if (process.platform === 'win32') {
+		// Windows 10 build 10586 is the first Windows release that supports 256 colors.
+		// Windows 10 build 14931 is the first release that supports 16m/TrueColor.
+		const osRelease = require$$0.release().split('.');
+		if (
+			Number(osRelease[0]) >= 10 &&
+			Number(osRelease[2]) >= 10586
+		) {
+			return Number(osRelease[2]) >= 14931 ? 3 : 2;
+		}
+
+		return 1;
+	}
+
+	if ('CI' in env) {
+		if (['TRAVIS', 'CIRCLECI', 'APPVEYOR', 'GITLAB_CI', 'GITHUB_ACTIONS', 'BUILDKITE'].some(sign => sign in env) || env.CI_NAME === 'codeship') {
+			return 1;
+		}
+
+		return min;
+	}
+
+	if ('TEAMCITY_VERSION' in env) {
+		return /^(9\.(0*[1-9]\d*)\.|\d{2,}\.)/.test(env.TEAMCITY_VERSION) ? 1 : 0;
+	}
+
+	if (env.COLORTERM === 'truecolor') {
+		return 3;
+	}
+
+	if ('TERM_PROGRAM' in env) {
+		const version = parseInt((env.TERM_PROGRAM_VERSION || '').split('.')[0], 10);
+
+		switch (env.TERM_PROGRAM) {
+			case 'iTerm.app':
+				return version >= 3 ? 3 : 2;
+			case 'Apple_Terminal':
+				return 2;
+			// No default
+		}
+	}
+
+	if (/-256(color)?$/i.test(env.TERM)) {
+		return 2;
+	}
+
+	if (/^screen|^xterm|^vt100|^vt220|^rxvt|color|ansi|cygwin|linux/i.test(env.TERM)) {
+		return 1;
+	}
+
+	if ('COLORTERM' in env) {
+		return 1;
+	}
+
+	return min;
+}
+
+function getSupportLevel(stream) {
+	const level = supportsColor(stream, stream && stream.isTTY);
+	return translateLevel(level);
+}
+
+var supportsColor_1 = {
+	supportsColor: getSupportLevel,
+	stdout: translateLevel(supportsColor(true, tty.isatty(1))),
+	stderr: translateLevel(supportsColor(true, tty.isatty(2)))
+};
+
 var node = createCommonjsModule(function (module, exports) {
 /**
  * Module dependencies.
@@ -2388,7 +2575,7 @@ exports.colors = [6, 2, 3, 4, 5, 1];
 try {
 	// Optional dependency (as in, doesn't need to be installed, NOT like optionalDependencies in package.json)
 	// eslint-disable-next-line import/no-extraneous-dependencies
-	const supportsColor = require$$0$2;
+	const supportsColor = supportsColor_1;
 
 	if (supportsColor && (supportsColor.stderr || supportsColor).level >= 2) {
 		exports.colors = [
@@ -4288,7 +4475,7 @@ var isNode = typeof process !== "undefined" &&
 var hasEnvVariables = typeof process !== "undefined" &&
     typeof process.env !== "undefined";
 
-function env(key) {
+function env$1(key) {
     return hasEnvVariables ? process.env[key] : undefined;
 }
 
@@ -4359,7 +4546,7 @@ var ret = {
     copyDescriptors: copyDescriptors,
     isNode: isNode,
     hasEnvVariables: hasEnvVariables,
-    env: env,
+    env: env$1,
     global: globalObject,
     getNativePromise: getNativePromise,
     contextBind: contextBind
@@ -4376,7 +4563,7 @@ ret.isRecentNode = ret.isNode && (function() {
 ret.nodeSupportsAsyncResource = ret.isNode && (function() {
     var supportsAsync = false;
     try {
-        var res = require$$0$3.AsyncResource;
+        var res = require$$0$2.AsyncResource;
         supportsAsync = typeof res.prototype.runInAsyncScope === "function";
     } catch (e) {
         supportsAsync = false;
@@ -8752,7 +8939,7 @@ var getContextDomain = function() {
     };
 };
 var AsyncResource = util$1.isNode && util$1.nodeSupportsAsyncResource ?
-    require$$0$3.AsyncResource : null;
+    require$$0$2.AsyncResource : null;
 var getContextAsyncHooks = function() {
     return {
         domain: getDomain(),

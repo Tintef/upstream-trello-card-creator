@@ -1,6 +1,6 @@
 {
   "name": "upstream-trello-card-creator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -22,6 +22,7 @@
   "dependencies": {
     "@actions/core": "^1.2.6",
     "@actions/exec": "^1.0.4",
+    "supports-color": "^7.2.0",
     "trello-node-api": "^0.0.9"
   }
 }
