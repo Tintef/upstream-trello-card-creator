@@ -22,10 +22,10 @@ async function run() {
   const upstream : string = core.getInput('UPSTREAM');
   if (!upstream.match(/[^\/]*\.git/gi)) return;
 
-  const upstreamFolder = upstream.match(/[^\/]*\.git/gi)?.[0].replace('.git', '') || '';
+  // const upstreamFolder = upstream.match(/[^\/]*\.git/gi)?.[0].replace('.git', '') || '';
 
   try {
-    process.chdir(`../../${upstreamFolder}`);
+    process.chdir('./upstream');
     let upstreamLog = '';
     await exec.exec('git', ['log', '--oneline', '--since="10 mins ago"'], {
       listeners: {

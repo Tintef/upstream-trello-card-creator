@@ -10885,20 +10885,18 @@ function createCard(commit) {
     });
 }
 function run() {
-    var _a;
     return __awaiter(this, void 0, void 0, function () {
-        var upstream, upstreamFolder, upstreamLog_1, newCommits, oldCommits_1, difference, error_1;
-        return __generator(this, function (_b) {
-            switch (_b.label) {
+        var upstream, upstreamLog_1, newCommits, oldCommits_1, difference, error_1;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
                 case 0:
                     upstream = core.getInput('UPSTREAM');
                     if (!upstream.match(/[^\/]*\.git/gi))
                         return [2 /*return*/];
-                    upstreamFolder = ((_a = upstream.match(/[^\/]*\.git/gi)) === null || _a === void 0 ? void 0 : _a[0].replace('.git', '')) || '';
-                    _b.label = 1;
+                    _a.label = 1;
                 case 1:
-                    _b.trys.push([1, 5, , 6]);
-                    process.chdir("../../" + upstreamFolder);
+                    _a.trys.push([1, 5, , 6]);
+                    process.chdir('./upstream');
                     upstreamLog_1 = '';
                     return [4 /*yield*/, exec_1.exec('git', ['log', '--oneline', '--since="10 mins ago"'], {
                             listeners: {
@@ -10908,7 +10906,7 @@ function run() {
                             },
                         })];
                 case 2:
-                    _b.sent();
+                    _a.sent();
                     newCommits = upstreamLog_1.split('\n');
                     upstreamLog_1 = '';
                     return [4 /*yield*/, exec_1.exec('git', ['log', '--oneline', '--since="10 mins ago"', '--until="5 mins ago"'], {
@@ -10919,16 +10917,16 @@ function run() {
                             },
                         })];
                 case 3:
-                    _b.sent();
+                    _a.sent();
                     oldCommits_1 = upstreamLog_1.split('\n');
                     process.chdir('..');
                     difference = newCommits.filter(function (commit) { return oldCommits_1.indexOf(commit) < 0; });
                     return [4 /*yield*/, Promise.all(difference.map(function (commit) { return createCard(commit); }))];
                 case 4:
-                    _b.sent();
+                    _a.sent();
                     return [3 /*break*/, 6];
                 case 5:
-                    error_1 = _b.sent();
+                    error_1 = _a.sent();
                     console.error(error_1);
                     return [3 /*break*/, 6];
                 case 6: return [2 /*return*/];
