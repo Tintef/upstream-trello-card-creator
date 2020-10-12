@@ -10916,7 +10916,7 @@ function run() {
                     _b.label = 1;
                 case 1:
                     _b.trys.push([1, 5, , 6]);
-                    process.chdir("./" + upstreamFolder);
+                    process.chdir("../../" + upstreamFolder);
                     upstreamLog_1 = '';
                     return [4 /*yield*/, exec_1.exec('git', ['log', '--oneline', '--since="10 mins ago"'], {
                             listeners: {

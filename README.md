@@ -37,6 +37,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@master
+        with:
+          repository: maurocen/mira-de-quien-te-burlaste-barney
+          token: ${{ secrets.GH_TOKEN }}
+
       - uses: tintef/upstream-trello-card-creator@v0.0.1
         with:
           TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
