@@ -1591,67 +1591,9 @@ exports.exec = exec;
 
 });
 
-var _from = "trello-node-api@^0.0.9";
-var _id = "trello-node-api@0.0.9";
-var _inBundle = false;
-var _integrity = "sha512-UVkn8rZV427i1tnn/flIkbmIzblEv868poTeOHhMrsblP3ogA6umgy2dh6+1QvjTvBQ1YiVpVUQQp/ZSBZlOMA==";
-var _location = "/trello-node-api";
-var _phantomChildren = {
-};
-var _requested = {
-	type: "range",
-	registry: true,
-	raw: "trello-node-api@^0.0.9",
-	name: "trello-node-api",
-	escapedName: "trello-node-api",
-	rawSpec: "^0.0.9",
-	saveSpec: null,
-	fetchSpec: "^0.0.9"
-};
-var _requiredBy = [
-	"/"
-];
-var _resolved = "https://registry.npmjs.org/trello-node-api/-/trello-node-api-0.0.9.tgz";
-var _shasum = "94780de053517439f804f004e596565bfd78d71a";
-var _spec = "trello-node-api@^0.0.9";
-var _where = "/Users/tintef/Documents/opensource/upstream-trello-card";
-var author = {
-	name: "Bhushankumar Lilapara",
-	email: "bhushankumar.lilapara@gmail.com"
-};
-var bugs = {
-	url: "https://github.com/bhushankumarl/trello-node-api/issues"
-};
-var bundleDependencies = false;
-var contributors = [
-	{
-		name: "Bhushankumar Lilapara",
-		url: "bhushankumar.lilapara@gmail.com"
-	}
-];
-var dependencies = {
-	bluebird: "^3.7.2",
-	debug: "^4.1.1",
-	"lodash.isplainobject": "^4.0.6",
-	qs: "~6.9.1",
-	"safe-buffer": "^5.2.0"
-};
-var deprecated = false;
+var name = "trello-node-api";
+var version = "0.0.9";
 var description = "Trello Node API wrapper";
-var devDependencies = {
-	"@types/chai": "^4.2.8",
-	"@types/mocha": "^7.0.1",
-	"@types/node": "^13.7.0",
-	chai: "^4.2.0",
-	"chai-as-promised": "~7.1.1",
-	mocha: "^7.0.1",
-	"ts-node": "^8.6.2",
-	typescript: "^3.7.5"
-};
-var engines = {
-	node: ">=4"
-};
-var homepage = "https://github.com/bhushankumarl/trello-node-api";
 var keywords = [
 	"node-trello",
 	"node-trello-api",
@@ -1675,49 +1617,57 @@ var keywords = [
 	"trello-typescript",
 	"trello-es6"
 ];
-var license = "MIT";
-var main = "lib/trello-node-api";
-var name = "trello-node-api";
+var homepage = "https://github.com/bhushankumarl/trello-node-api";
+var author = "Bhushankumar Lilapara<bhushankumar.lilapara@gmail.com>";
+var contributors = [
+	"Bhushankumar Lilapara (bhushankumar.lilapara@gmail.com)"
+];
 var repository = {
 	type: "git",
-	url: "git+https://github.com/bhushankumarl/trello-node-api.git"
+	url: "https://github.com/bhushankumarl/trello-node-api"
 };
+var engines = {
+	node: ">=4"
+};
+var main = "lib/trello-node-api";
+var dependencies = {
+	bluebird: "^3.7.2",
+	debug: "^4.1.1",
+	"lodash.isplainobject": "^4.0.6",
+	qs: "~6.9.1",
+	"safe-buffer": "^5.2.0"
+};
+var devDependencies = {
+	"@types/chai": "^4.2.8",
+	"@types/mocha": "^7.0.1",
+	"@types/node": "^13.7.0",
+	chai: "^4.2.0",
+	"chai-as-promised": "~7.1.1",
+	mocha: "^7.0.1",
+	"ts-node": "^8.6.2",
+	typescript: "^3.7.5"
+};
+var license = "MIT";
 var scripts = {
 	lint: "tsc index.d.ts",
 	"test.mocha": "npm run lint; mocha -r ts-node/register test/**/*.spec.ts"
 };
-var version = "0.0.9";
 var require$$1 = {
-	_from: _from,
-	_id: _id,
-	_inBundle: _inBundle,
-	_integrity: _integrity,
-	_location: _location,
-	_phantomChildren: _phantomChildren,
-	_requested: _requested,
-	_requiredBy: _requiredBy,
-	_resolved: _resolved,
-	_shasum: _shasum,
-	_spec: _spec,
-	_where: _where,
-	author: author,
-	bugs: bugs,
-	"bugs:": "https://github.com/bhushankumarl/trello-node-api/issues",
-	bundleDependencies: bundleDependencies,
-	contributors: contributors,
-	dependencies: dependencies,
-	deprecated: deprecated,
-	description: description,
-	devDependencies: devDependencies,
-	engines: engines,
-	homepage: homepage,
-	keywords: keywords,
-	license: license,
-	main: main,
 	name: name,
+	version: version,
+	description: description,
+	keywords: keywords,
+	homepage: homepage,
+	author: author,
+	contributors: contributors,
 	repository: repository,
-	scripts: scripts,
-	version: version
+	"bugs:": "https://github.com/bhushankumarl/trello-node-api/issues",
+	engines: engines,
+	main: main,
+	dependencies: dependencies,
+	devDependencies: devDependencies,
+	license: license,
+	scripts: scripts
 };
 
 /**
@@ -10947,12 +10897,7 @@ function run() {
                     upstreamFolder = ((_a = upstream.match(/[^\/]*\.git/gi)) === null || _a === void 0 ? void 0 : _a[0].replace('.git', '')) || '';
                     _b.label = 1;
                 case 1:
-                    _b.trys.push([1, 6, , 7]);
-                    // Fetch upstream
-                    return [4 /*yield*/, exec_1.exec('git', ['clone', upstream])];
-                case 2:
-                    // Fetch upstream
-                    _b.sent();
+                    _b.trys.push([1, 5, , 6]);
                     process.chdir("./" + upstreamFolder);
                     upstreamLog_1 = '';
                     return [4 /*yield*/, exec_1.exec('git', ['log', '--oneline', '--since="10 mins ago"'], {
@@ -10962,7 +10907,7 @@ function run() {
                                 },
                             },
                         })];
-                case 3:
+                case 2:
                     _b.sent();
                     newCommits = upstreamLog_1.split('\n');
                     upstreamLog_1 = '';
@@ -10973,20 +10918,20 @@ function run() {
                                 },
                             },
                         })];
-                case 4:
+                case 3:
                     _b.sent();
                     oldCommits_1 = upstreamLog_1.split('\n');
                     process.chdir('..');
                     difference = newCommits.filter(function (commit) { return oldCommits_1.indexOf(commit) < 0; });
                     return [4 /*yield*/, Promise.all(difference.map(function (commit) { return createCard(commit); }))];
-                case 5:
+                case 4:
                     _b.sent();
-                    return [3 /*break*/, 7];
-                case 6:
+                    return [3 /*break*/, 6];
+                case 5:
                     error_1 = _b.sent();
                     console.error(error_1);
-                    return [3 /*break*/, 7];
-                case 7: return [2 /*return*/];
+                    return [3 /*break*/, 6];
+                case 6: return [2 /*return*/];
             }
         });
     });
